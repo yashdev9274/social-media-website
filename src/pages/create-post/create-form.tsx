@@ -36,7 +36,7 @@ export const CreateForm = () => {
             // we aliminated this above part with this
             ...data,
             user: user?.displayName,
-            id: user?.uid,
+            userId: user?.uid,
         });
     };
 

@@ -6,8 +6,8 @@ export const Navbar = () => {
 
     const [user] = useAuthState(auth);
     return (
-        <div>
-            <div className="Links">
+        <div className = "navbar">
+            <div className="links">
                 
                 <Link to="/">Home</Link>
                 <Link to="/Login">Login</Link>

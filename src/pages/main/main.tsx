@@ -4,7 +4,7 @@ import {useEffect}from "react";
 import { useState } from "react";
 import { Post } from "./post";
 
-interface Post{
+export interface Post{
     id: string;
     userId: string;
     title: string;
@@ -29,5 +29,5 @@ export const Main = () => {
 
         getPosts();
     }, []);
-    return <div>{postsList?.map((post) => (<Post/>))}</div>;
+    return <div>{postsList?.map((post) => (<Post post = {post}/>))}</div>;
 };
